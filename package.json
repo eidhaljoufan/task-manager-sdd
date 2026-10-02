@@ -1,0 +1,24 @@
+{
+  "name": "todolist-app",
+  "version": "1.0.0",
+  "description": "Task management application with CRUD operations, filtering, search, and priority/due-date management",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "todolist",
+    "task-management",
+    "crud"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
