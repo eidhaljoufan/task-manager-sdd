@@ -72,8 +72,8 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - **Property 12: Pagination Retrieves Complete Task Set Without Duplication**
     - **Validates: Requirements 2.1, 2.7**
 
-- [ ] 4. Implement Task_Manager business logic layer
-  - [ ] 4.1 Implement createTask operation
+- [x] 4. Implement Task_Manager business logic layer
+  - [~] 4.1 Implement createTask operation
     - Implement `createTask(title, description, priority)` dengan validation
     - Set default priority ke "Medium" jika tidak diberikan
     - Auto-generate creation_date dengan sistem timestamp
