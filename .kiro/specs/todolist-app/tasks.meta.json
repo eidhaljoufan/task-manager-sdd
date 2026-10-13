@@ -1,5 +1,10 @@
 {
-  "pbtResults": {},
+  "pbtResults": {
+    "4.10 Write property tests untuk searchTasks": {
+      "status": "passed",
+      "lastRunTimestamp": 1791344193975
+    }
+  },
   "executionHistory": {
     "1. Set up project structure and initialize storage system": [
       {
@@ -85,6 +90,219 @@
         "executionId": "433993df-d173-4b42-9509-660f8d331ba4",
         "chatSessionId": "sess_5e396a43-ff45-4912-aece-e699af7f8d24",
         "timestamp": 1790937460717
+      }
+    ],
+    "4.3 Implement updateTask operation": [
+      {
+        "executionId": "027e1d90-35c0-4839-8e77-235053ffde5f",
+        "chatSessionId": "sess_eafa6782-1ab8-4107-9846-5049f0612147",
+        "timestamp": 1791343042124
+      },
+      {
+        "executionId": "027e1d90-35c0-4839-8e77-235053ffde5f",
+        "chatSessionId": "sess_eafa6782-1ab8-4107-9846-5049f0612147",
+        "timestamp": 1791343195798
+      }
+    ],
+    "4.5 Implement markTaskComplete operation": [
+      {
+        "executionId": "f9f2b5b5-7b0d-4154-843b-94a98fb3d76d",
+        "chatSessionId": "sess_bc8d97af-ee3e-4929-9d33-89c391446191",
+        "timestamp": 1791343251176
+      },
+      {
+        "executionId": "f9f2b5b5-7b0d-4154-843b-94a98fb3d76d",
+        "chatSessionId": "sess_bc8d97af-ee3e-4929-9d33-89c391446191",
+        "timestamp": 1791343428152
+      }
+    ],
+    "4.7 Implement deleteTask operation": [
+      {
+        "executionId": "a9e0ed32-0035-4007-9899-672bac02fceb",
+        "chatSessionId": "sess_f402da5e-7b2f-4e9d-89ef-672ed6729130",
+        "timestamp": 1791343441629
+      },
+      {
+        "executionId": "a9e0ed32-0035-4007-9899-672bac02fceb",
+        "chatSessionId": "sess_f402da5e-7b2f-4e9d-89ef-672ed6729130",
+        "timestamp": 1791343544110
+      }
+    ],
+    "4.9 Implement searchTasks operation": [
+      {
+        "executionId": "58db2315-5146-41f6-9495-82884779a511",
+        "chatSessionId": "sess_65780e1b-6a04-4d82-a875-310b2111c7f0",
+        "timestamp": 1791343594886
+      },
+      {
+        "executionId": "58db2315-5146-41f6-9495-82884779a511",
+        "chatSessionId": "sess_65780e1b-6a04-4d82-a875-310b2111c7f0",
+        "timestamp": 1791344211585
+      }
+    ],
+    "5. Checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "ab4d6fea-61f8-4457-b03c-31146ec07458",
+        "chatSessionId": "sess_24c1b5b4-08a3-4f1c-864a-a11ca1b76fe0",
+        "timestamp": 1791860877361
+      },
+      {
+        "executionId": "ab4d6fea-61f8-4457-b03c-31146ec07458",
+        "chatSessionId": "sess_24c1b5b4-08a3-4f1c-864a-a11ca1b76fe0",
+        "timestamp": 1791861108274
+      }
+    ],
+    "6.1 Create task display components": [
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862183213
+      },
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862478686
+      }
+    ],
+    "6.3 Implement pagination UI controls": [
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862483194
+      },
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862487168
+      }
+    ],
+    "6.5 Implement filtering UI controls": [
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862491336
+      },
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862494943
+      }
+    ],
+    "6.7 Implement search UI controls": [
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862498515
+      },
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862502269
+      }
+    ],
+    "6.9 Implement task creation UI": [
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862506046
+      },
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862510131
+      }
+    ],
+    "6.11 Implement task update UI": [
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862517392
+      },
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862522389
+      }
+    ],
+    "6.13 Implement task completion UI": [
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862526205
+      },
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862530371
+      }
+    ],
+    "6.15 Implement task deletion UI": [
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862534221
+      },
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862538440
+      }
+    ],
+    "6.17 Implement overdue date visual indicators": [
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862542762
+      },
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862547741
+      }
+    ],
+    "6.19 Implement error handling dan user feedback": [
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862551620
+      },
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862555343
+      }
+    ],
+    "6. Implement UI layer dan user interactions": [
+      {
+        "executionId": "39151cda-4a07-4c5d-8ff1-b26aa799a504",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791862555476
+      }
+    ],
+    "13.1 Initialize Vite + React project di folder /web": [
+      {
+        "executionId": "5efaa025-4fce-4d18-b943-32e980c7f9f6",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791863043646
+      },
+      {
+        "executionId": "5efaa025-4fce-4d18-b943-32e980c7f9f6",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791863265620
+      }
+    ],
+    "13. Setup React + Vite web UI project": [
+      {
+        "executionId": "5efaa025-4fce-4d18-b943-32e980c7f9f6",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791863265973
+      }
+    ],
+    "14.1 Create TaskCard component": [
+      {
+        "executionId": "5efaa025-4fce-4d18-b943-32e980c7f9f6",
+        "chatSessionId": "sess_1d95d24c-13c2-4265-853c-644d45b3abec",
+        "timestamp": 1791863270902
       }
     ]
   }

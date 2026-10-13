@@ -85,7 +85,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - **Property 1: Valid Task Creation Preserves Input and Adds Metadata**
     - **Validates: Requirements 1.1, 1.2**
 
-  - [ ] 4.3 Implement updateTask operation
+  - [x] 4.3 Implement updateTask operation
     - Implement `updateTask(taskId, fields, confirmCallback)` dengan validation
     - Request user confirmation sebelum persist
     - Update hanya fields yang provided
@@ -99,7 +99,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - **Property 3: Text Length Constraints Are Enforced Consistently**
     - **Validates: Requirements 1.5, 3.4**
 
-  - [ ] 4.5 Implement markTaskComplete operation
+  - [x] 4.5 Implement markTaskComplete operation
     - Implement `markTaskComplete(taskId)` untuk change status ke "Completed"
     - Record completion_time timestamp dalam ISO 8601 format
     - Handle error untuk invalid task ID
@@ -111,7 +111,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - **Property 15: Invalid Task IDs Result in Errors Without State Changes**
     - **Validates: Requirements 4.4**
 
-  - [ ] 4.7 Implement deleteTask operation
+  - [x] 4.7 Implement deleteTask operation
     - Implement `deleteTask(taskId, confirmCallback)` dengan confirmation dialog
     - Call Task_Storage.delete() after user confirms
     - Handle user cancellation tanpa perubahan task
@@ -122,7 +122,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - **Property 14: Task Deletion After Confirmation Removes Task Completely**
     - **Validates: Requirements 5.2, 5.3**
 
-  - [ ] 4.9 Implement searchTasks operation
+  - [x] 4.9 Implement searchTasks operation
     - Implement `searchTasks(keyword, pageNumber=1)` dengan case-insensitive partial matching
     - Search di title dan description
     - Limit ke 100 results
@@ -136,7 +136,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - **Property 7: Empty/Whitespace Search Returns All Tasks Unfiltered**
     - **Validates: Requirements 6.5**
 
-  - [ ] 4.11 Implement filterTasks operation
+  - [x] 4.11 Implement filterTasks operation
     - Implement `filterTasks(status, priority, pageNumber=1)` dengan kombinasi filter
     - Support filter by status (Completed/Incomplete)
     - Support filter by priority (High/Medium/Low)
@@ -148,13 +148,13 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - **Property 5: Filter Criteria Are Always Applied Correctly**
     - **Validates: Requirements 2.3, 2.4, 7.4**
 
-- [ ] 5. Checkpoint - Ensure all tests pass
+- [x] 5. Checkpoint - Ensure all tests pass
   - Jalankan semua tests (unit tests dan property tests)
   - Verifikasi semua business logic operations berfungsi dengan benar
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 6. Implement UI layer dan user interactions
-  - [ ] 6.1 Create task display components
+- [x] 6. Implement UI layer dan user interactions
+  - [x] 6.1 Create task display components
     - Implement function untuk display task list dengan title, description, priority, status, due_date
     - Display empty state message "Tidak ada tugas ditemukan" ketika list kosong
     - Display default sort by creation_date DESC (newest first)
@@ -167,7 +167,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - Test visual indicators untuk completed tasks
     - _Requirements: 2.2, 4.3_
 
-  - [ ] 6.3 Implement pagination UI controls
+  - [x] 6.3 Implement pagination UI controls
     - Create pagination controls untuk navigate antara pages
     - Display current page, total pages, dan navigation buttons
     - Load next/previous page sets dalam < 1 detik
@@ -178,7 +178,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - Test page data accuracy
     - _Requirements: 2.1, 2.7_
 
-  - [ ] 6.5 Implement filtering UI controls
+  - [x] 6.5 Implement filtering UI controls
     - Create filter controls untuk status (Completed/Incomplete)
     - Create filter controls untuk priority (High/Medium/Low)
     - Apply filters melalui Task_Manager.filterTasks()
@@ -189,7 +189,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - Test filter application dan results
     - _Requirements: 2.3, 2.4_
 
-  - [ ] 6.7 Implement search UI controls
+  - [x] 6.7 Implement search UI controls
     - Create search input field (1-255 karakter)
     - Call Task_Manager.searchTasks() dengan keyword
     - Display search results dengan relevance sorting
@@ -202,7 +202,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - Test empty search behavior
     - _Requirements: 6.1, 6.5_
 
-  - [ ] 6.9 Implement task creation UI
+  - [x] 6.9 Implement task creation UI
     - Create form untuk input title (required), description (optional), priority
     - Call Task_Manager.createTask() dengan input values
     - Display validation errors dari Task_Manager
@@ -213,7 +213,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - Test form validation dan error display
     - _Requirements: 1.4, 1.5_
 
-  - [ ] 6.11 Implement task update UI
+  - [x] 6.11 Implement task update UI
     - Create form untuk update task details
     - Display confirmation dialog sebelum save
     - Call Task_Manager.updateTask() dengan updated fields
@@ -225,7 +225,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - Test validation errors
     - _Requirements: 3.2, 3.3, 3.4_
 
-  - [ ] 6.13 Implement task completion UI
+  - [x] 6.13 Implement task completion UI
     - Add button/checkbox untuk mark task sebagai complete
     - Call Task_Manager.markTaskComplete()
     - Update UI untuk show completed state
@@ -236,7 +236,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - Test visual indicators
     - _Requirements: 4.1, 4.3_
 
-  - [ ] 6.15 Implement task deletion UI
+  - [x] 6.15 Implement task deletion UI
     - Add delete button untuk each task
     - Display confirmation dialog sebelum delete
     - Call Task_Manager.deleteTask() setelah confirmation
@@ -248,7 +248,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - Test deletion success dan error handling
     - _Requirements: 5.1, 5.2, 5.3_
 
-  - [ ] 6.17 Implement overdue date visual indicators
+  - [x] 6.17 Implement overdue date visual indicators
     - Check task due_date vs current date
     - For incomplete tasks past due date: display red color, warning icon, atau bold text
     - For completed tasks: tidak display overdue indicator
@@ -260,7 +260,7 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - Test completed task tidak show overdue
     - _Requirements: 8.5, 8.6, 8.7_
 
-  - [ ] 6.19 Implement error handling dan user feedback
+  - [x] 6.19 Implement error handling dan user feedback
     - Display error messages dari Task_Manager dengan Indonesian language
     - Display success messages setelah successful operations
     - Handle storage errors dengan appropriate messages
@@ -359,6 +359,112 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - Document usage examples untuk setiap operation
     - Document error codes dan messages
     - _Requirements: All_
+
+- [x] 13. Setup React + Vite web UI project
+  - [x] 13.1 Initialize Vite + React project di folder /web
+    - Jalankan `npm create vite@latest web -- --template react` dari workspace root
+    - Install dependencies: `npm install` di folder /web
+    - Install Tailwind CSS untuk styling: `npm install -D tailwindcss postcss autoprefixer` dan inisialisasi config
+    - Copy/symlink atau bundle `task-manager.js`, `task-storage.js`, `task-model.js`, `task-validation.js` ke src/core/ di project web
+    - Setup Vite config untuk resolve module core
+    - Verify dev server berjalan dengan `npm run dev`
+    - _Requirements: 1.1, 2.1_
+
+- [ ] 14. Implement React components untuk Task List
+  - [-] 14.1 Create TaskCard component
+    - Display title, description, priority badge, status, due_date untuk satu task
+    - Completed tasks: strikethrough title + checkmark icon
+    - Overdue incomplete tasks: border merah + icon warning + text "Terlambat"
+    - Priority badge dengan warna: High=merah, Medium=kuning, Low=hijau
+    - _Requirements: 2.2, 4.3, 8.5, 8.6, 8.7_
+
+  - [ ] 14.2 Create TaskList component
+    - Render daftar TaskCard dari array tasks
+    - Tampilkan empty state "Tidak ada tugas ditemukan" ketika list kosong
+    - Default sort by creation_date DESC (newest first)
+    - _Requirements: 2.1, 2.5, 2.6_
+
+  - [ ] 14.3 Create PaginationControls component
+    - Tampilkan "Halaman X dari Y" dan tombol Sebelumnya/Berikutnya
+    - Disable tombol ketika tidak ada halaman sebelum/sesudah
+    - Navigasi halaman < 1 detik
+    - _Requirements: 2.1, 2.7_
+
+- [ ] 15. Implement React components untuk Task Actions
+  - [ ] 15.1 Create TaskForm component (Create & Update)
+    - Form dengan input: title (required), description (optional), priority (select), due_date (date picker)
+    - Validation errors tampil di bawah tiap field dalam Bahasa Indonesia
+    - Submit button disabled ketika title kosong
+    - Clear/reset form setelah berhasil create
+    - _Requirements: 1.1, 1.4, 1.5, 3.1, 3.3, 3.4, 7.1, 7.2, 8.1, 8.3_
+
+  - [ ] 15.2 Create ConfirmationDialog component
+    - Modal dialog dengan judul aksi (hapus/perbarui), detail task, tombol Konfirmasi dan Batal
+    - Reusable untuk delete dan update operations
+    - _Requirements: 3.2, 5.1_
+
+  - [ ] 15.3 Create FilterBar component
+    - Filter dropdown untuk Status (Semua/Incomplete/Completed)
+    - Filter dropdown untuk Priority (Semua/High/Medium/Low)
+    - Reset filter button
+    - Apply filters via TaskManager.filterTasks(), response = 500ms
+    - _Requirements: 2.3, 2.4, 7.4_
+
+  - [ ] 15.4 Create SearchBar component
+    - Input field dengan placeholder "Cari tugas..."
+    - Debounce 300ms sebelum trigger search
+    - Clear button (�) untuk reset search
+    - Handle empty search = tampil semua tasks
+    - Response = 300ms
+    - _Requirements: 6.1, 6.2, 6.3, 6.5_
+
+- [ ] 16. Implement main App state management dan integration
+  - [ ] 16.1 Setup App.jsx dengan TaskManager dan TaskStorage instances
+    - Inisialisasi TaskStorage dan TaskManager di App root
+    - State: tasks list, currentPage, totalPages, activeFilters, searchKeyword, loading, error
+    - Pass TaskManager ke komponen via props atau React Context
+    - _Requirements: 1.1, 2.1_
+
+  - [ ] 16.2 Wire up Create Task flow
+    - TaskForm onSubmit ? TaskManager.createTask() ? refresh task list
+    - Tampilkan toast/alert sukses setelah berhasil
+    - Tampilkan error validation dari TaskManager di form
+    - _Requirements: 1.1, 1.4, 1.5_
+
+  - [ ] 16.3 Wire up Update Task flow
+    - Klik Edit pada TaskCard ? buka TaskForm pre-filled dengan data task
+    - Tampilkan ConfirmationDialog sebelum save
+    - TaskManager.updateTask() ? refresh task list ? tutup form
+    - _Requirements: 3.1, 3.2, 3.3, 3.4_
+
+  - [ ] 16.4 Wire up Mark Complete flow
+    - Klik checkbox/button Complete pada TaskCard ? TaskManager.markTaskComplete()
+    - Update TaskCard visual immediately (optimistic update)
+    - _Requirements: 4.1, 4.3_
+
+  - [ ] 16.5 Wire up Delete Task flow
+    - Klik Delete pada TaskCard ? tampilkan ConfirmationDialog
+    - Konfirmasi ? TaskManager.deleteTask() ? hapus card dari list
+    - Tampilkan success message
+    - _Requirements: 5.1, 5.2, 5.3, 5.4_
+
+  - [ ] 16.6 Wire up Search & Filter
+    - SearchBar onChange ? TaskManager.searchTasks() ? update task list
+    - FilterBar onChange ? TaskManager.filterTasks() ? update task list
+    - Reset pagination ke halaman 1 ketika search/filter berubah
+    - _Requirements: 2.3, 2.4, 6.1, 6.5_
+
+  - [ ] 16.7 Wire up Pagination
+    - PaginationControls onNext/onPrev ? load halaman berikutnya/sebelumnya
+    - Preserve active search/filter state saat navigasi halaman
+    - _Requirements: 2.1, 2.7_
+
+- [ ] 17. Checkpoint - Verify web UI berfungsi di browser
+  - Buka `npm run dev` di folder /web
+  - Verify semua fitur bisa digunakan: buat, lihat, edit, selesaikan, hapus task
+  - Verify filter, search, dan pagination bekerja
+  - Verify visual indicators overdue dan completed tampil benar
+  - Ensure all requirements terpenuhi di browser UI.
 
 ---
 

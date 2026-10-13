@@ -214,12 +214,12 @@ class TaskManager {
   /**
    * Delete a task
    * @param {string} taskId - Task ID to delete
-   * @param {Function} confirmCallback - Callback to request user confirmation
-   * @returns {Promise<boolean>} - True if deleted
-   * @throws {Error} if task not found or user cancels
+   * @param {Function} confirmCallback - Async callback that returns true (confirmed) or false (cancelled)
+   * @returns {Promise<boolean>} - True if deleted successfully
+   * @throws {Error} if task not found, user cancels, or storage fails
    */
   async deleteTask(taskId, confirmCallback = null) {
-    // Verify task exists
+    // Verify task exists before showing confirmation dialog
     let task;
     try {
       task = this.storage.retrieve(taskId);
@@ -227,16 +227,33 @@ class TaskManager {
       throw new Error('Tugas tidak ditemukan');
     }
 
-    // Request user confirmation if callback provided
+    // Show confirmation dialog via callback (Req 5.1)
     if (confirmCallback) {
-      const confirmed = await confirmCallback(task);
+      let confirmed;
+      try {
+        confirmed = await confirmCallback(task);
+      } catch (error) {
+        // If callback itself throws, treat as cancellation
+        throw new Error('Penghapusan dibatalkan oleh pengguna');
+      }
+
+      // If user cancels, keep task unchanged (Req 5.3)
       if (!confirmed) {
         throw new Error('Penghapusan dibatalkan oleh pengguna');
       }
     }
 
-    // Delete from storage
-    this.storage.delete(taskId);
+    // Delete from storage and handle storage errors (Req 5.4)
+    try {
+      this.storage.delete(taskId);
+    } catch (error) {
+      // Storage unavailable or deletion failed — task is preserved (Req 5.4)
+      if (error.message && error.message.includes('tidak tersedia')) {
+        throw new Error('Penyimpanan tugas tidak tersedia. Penghapusan dibatalkan');
+      }
+      throw new Error('Gagal menghapus tugas. Silakan coba lagi');
+    }
+
     return true;
   }
 
