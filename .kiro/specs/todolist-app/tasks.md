@@ -370,47 +370,47 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - Verify dev server berjalan dengan `npm run dev`
     - _Requirements: 1.1, 2.1_
 
-- [ ] 14. Implement React components untuk Task List
-  - [-] 14.1 Create TaskCard component
+- [x] 14. Implement React components untuk Task List
+  - [x] 14.1 Create TaskCard component
     - Display title, description, priority badge, status, due_date untuk satu task
     - Completed tasks: strikethrough title + checkmark icon
     - Overdue incomplete tasks: border merah + icon warning + text "Terlambat"
     - Priority badge dengan warna: High=merah, Medium=kuning, Low=hijau
     - _Requirements: 2.2, 4.3, 8.5, 8.6, 8.7_
 
-  - [ ] 14.2 Create TaskList component
+  - [x] 14.2 Create TaskList component
     - Render daftar TaskCard dari array tasks
     - Tampilkan empty state "Tidak ada tugas ditemukan" ketika list kosong
     - Default sort by creation_date DESC (newest first)
     - _Requirements: 2.1, 2.5, 2.6_
 
-  - [ ] 14.3 Create PaginationControls component
+  - [x] 14.3 Create PaginationControls component
     - Tampilkan "Halaman X dari Y" dan tombol Sebelumnya/Berikutnya
     - Disable tombol ketika tidak ada halaman sebelum/sesudah
     - Navigasi halaman < 1 detik
     - _Requirements: 2.1, 2.7_
 
-- [ ] 15. Implement React components untuk Task Actions
-  - [ ] 15.1 Create TaskForm component (Create & Update)
+- [x] 15. Implement React components untuk Task Actions
+  - [x] 15.1 Create TaskForm component (Create & Update)
     - Form dengan input: title (required), description (optional), priority (select), due_date (date picker)
     - Validation errors tampil di bawah tiap field dalam Bahasa Indonesia
     - Submit button disabled ketika title kosong
     - Clear/reset form setelah berhasil create
     - _Requirements: 1.1, 1.4, 1.5, 3.1, 3.3, 3.4, 7.1, 7.2, 8.1, 8.3_
 
-  - [ ] 15.2 Create ConfirmationDialog component
+  - [x] 15.2 Create ConfirmationDialog component
     - Modal dialog dengan judul aksi (hapus/perbarui), detail task, tombol Konfirmasi dan Batal
     - Reusable untuk delete dan update operations
     - _Requirements: 3.2, 5.1_
 
-  - [ ] 15.3 Create FilterBar component
+  - [x] 15.3 Create FilterBar component
     - Filter dropdown untuk Status (Semua/Incomplete/Completed)
     - Filter dropdown untuk Priority (Semua/High/Medium/Low)
     - Reset filter button
     - Apply filters via TaskManager.filterTasks(), response = 500ms
     - _Requirements: 2.3, 2.4, 7.4_
 
-  - [ ] 15.4 Create SearchBar component
+  - [x] 15.4 Create SearchBar component
     - Input field dengan placeholder "Cari tugas..."
     - Debounce 300ms sebelum trigger search
     - Clear button (�) untuk reset search
@@ -418,43 +418,43 @@ Implementasi aplikasi manajemen tugas lengkap dengan fitur CRUD, filtering, sear
     - Response = 300ms
     - _Requirements: 6.1, 6.2, 6.3, 6.5_
 
-- [ ] 16. Implement main App state management dan integration
-  - [ ] 16.1 Setup App.jsx dengan TaskManager dan TaskStorage instances
+- [x] 16. Implement main App state management dan integration
+  - [x] 16.1 Setup App.jsx dengan TaskManager dan TaskStorage instances
     - Inisialisasi TaskStorage dan TaskManager di App root
     - State: tasks list, currentPage, totalPages, activeFilters, searchKeyword, loading, error
     - Pass TaskManager ke komponen via props atau React Context
     - _Requirements: 1.1, 2.1_
 
-  - [ ] 16.2 Wire up Create Task flow
+  - [x] 16.2 Wire up Create Task flow
     - TaskForm onSubmit ? TaskManager.createTask() ? refresh task list
     - Tampilkan toast/alert sukses setelah berhasil
     - Tampilkan error validation dari TaskManager di form
     - _Requirements: 1.1, 1.4, 1.5_
 
-  - [ ] 16.3 Wire up Update Task flow
+  - [x] 16.3 Wire up Update Task flow
     - Klik Edit pada TaskCard ? buka TaskForm pre-filled dengan data task
     - Tampilkan ConfirmationDialog sebelum save
     - TaskManager.updateTask() ? refresh task list ? tutup form
     - _Requirements: 3.1, 3.2, 3.3, 3.4_
 
-  - [ ] 16.4 Wire up Mark Complete flow
+  - [x] 16.4 Wire up Mark Complete flow
     - Klik checkbox/button Complete pada TaskCard ? TaskManager.markTaskComplete()
     - Update TaskCard visual immediately (optimistic update)
     - _Requirements: 4.1, 4.3_
 
-  - [ ] 16.5 Wire up Delete Task flow
+  - [x] 16.5 Wire up Delete Task flow
     - Klik Delete pada TaskCard ? tampilkan ConfirmationDialog
     - Konfirmasi ? TaskManager.deleteTask() ? hapus card dari list
     - Tampilkan success message
     - _Requirements: 5.1, 5.2, 5.3, 5.4_
 
-  - [ ] 16.6 Wire up Search & Filter
+  - [x] 16.6 Wire up Search & Filter
     - SearchBar onChange ? TaskManager.searchTasks() ? update task list
     - FilterBar onChange ? TaskManager.filterTasks() ? update task list
     - Reset pagination ke halaman 1 ketika search/filter berubah
     - _Requirements: 2.3, 2.4, 6.1, 6.5_
 
-  - [ ] 16.7 Wire up Pagination
+  - [x] 16.7 Wire up Pagination
     - PaginationControls onNext/onPrev ? load halaman berikutnya/sebelumnya
     - Preserve active search/filter state saat navigasi halaman
     - _Requirements: 2.1, 2.7_
