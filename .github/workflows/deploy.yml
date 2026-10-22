@@ -28,12 +28,12 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-          cache-dependency-path: 'web/package-lock.json' # mengacu ke folder web
-
+          cache-dependency-path: 'package-lock.json' # ngarah ke root
+      
       - name: Install dependencies
-        run: npm ci
-        working-directory: ./web # nge-run npm ci di dalam folder web
-
+        run: npm install
+        working-directory: ./web
+        
       - name: Build project
         run: npm run build
         working-directory: ./web # nge-run npm run build di dalam folder web
